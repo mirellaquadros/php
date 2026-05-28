@@ -1,0 +1,137 @@
+/* Configurações Gerais e Cores */
+:root {
+    --cor-fundo: #f4f6f9;
+    --cor-principal: #2c3e50;
+    --cor-destaque: #3498db;
+    --cor-texto: #333333;
+    --cor-linha: #e0e0e0;
+    --cor-botao-hover: #2980b9;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+    border-bottom: 2.5px solid var(--cor-destaque);
+    padding-bottom: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* --- Formulário de Filtro --- */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 10px 6px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 750px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os elementos inline */
+}
+
+form label {
+    font-weight: bold;
+    color: var(--cor-principal);
+}
+
+form select {
+    padding: 8px 12px;
+    border: 1px solid var(--cor-linha);
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    outline: none;
+    min-width: 150px;
+    transition: border-color 0.3s;
+}
+
+form select:focus {
+    border-color: var(--cor-destaque);
+}
+
+form button {
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* --- Tabela de Dados --- */
+table.tabela {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden; /* Garante que as bordas arredondadas funcionem */
+    box-shadow: 10px 6px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+table.tabela th, 
+table.tabela td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table.tabela th {
+    background-color: var(--cor-principal);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+table.tabela tr {
+    border-bottom: 1px solid var(--cor-linha);
+    transition: background-color 0.2s;
+}
+
+/* Efeito zebrado nas linhas e hover */
+table.tabela tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+table.tabela tr:hover {
+    background-color: #f1f3f5;
+}
+
+/* Coluna de Ações e Ícones */
+table.tabela td:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre os ícones de Alterar e Excluir */
+}
+
+table.tabela img {
+    transition: transform 0.2s, opacity 0.2s;
+    cursor: pointer;
+}
+
+table.tabela img:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}

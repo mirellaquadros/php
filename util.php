@@ -32,7 +32,7 @@ function conecta($paramStringConexao="")
     if($paramStringConexao == "")
     {
         $paramStringConexao = "pgsql:host=localhost; port=5432
-        dbname=aluno; user=postgres; password=postgres";
+        dbname=alunos; user=postgres; password=postgres";
     }
 
     try{ // tente

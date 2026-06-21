@@ -1,0 +1,23 @@
+#titulo{
+    background-color: darkblue;
+}
+
+#corpo{
+    background-color: rgb(40, 39, 39);
+    border-radius: 5%;
+}
+
+h1{
+    background-color: rgb(9, 9, 101);
+    border-radius: 5%;
+}
+
+.label{
+    background-color: rgb(48, 48, 122);
+    border-radius: 10%;
+}
+
+.botao{
+    border-radius: 40%;
+    color:darkcyan;
+}
